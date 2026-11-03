@@ -1,0 +1,39 @@
+name: Обновление ключей
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # каждые 30 минут
+  workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-keys
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Читаю канал
+        env:
+          CHANNEL: freekvn
+          OUT: keys.json
+        run: python3 scripts/fetch_keys.py
+
+      - name: Сохраняю, если ключи изменились
+        run: |
+          if git diff --quiet -- keys.json && git ls-files --error-unmatch keys.json >/dev/null 2>&1; then
+            echo "Без изменений"
+            exit 0
+          fi
+          git config user.name  "medvpn-bot"
+          git config user.email "medvpn-bot@users.noreply.github.com"
+          git add keys.json
+          git commit -m "Обновление ключей"
+          git push
+          # сбрасываю кэш CDN, чтобы зеркало jsDelivr сразу отдало новый файл
+          curl -fsS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/keys.json" || true
