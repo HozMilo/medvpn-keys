@@ -1,0 +1,9 @@
+{
+ "link": null,
+ "keys": [
+  "vless://91e8215c-cc6a-4494-b52b-efd87836ef50@real.embrofree.org:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=cdn.jsdelivr.net&fp=firefox&pbk=Xbd0JeKM6WsUITbELeeCEmQLl-4Sw_A-JQuzDBEco2M&type=tcp#EmbroKVN-VLESS-Free",
+  "hysteria2://91e8215c-cc6a-4494-b52b-efd87836ef50@media.embrofree.org:443/?sni=media.embrofree.org&alpn=h3#EmbroKVN-HY2-Free"
+ ],
+ "updated": "2026-11-03T10:11:25+00:00",
+ "checked": "2026-11-03T10:11:25+00:00"
+}
