@@ -1,9 +1,8 @@
 {
  "link": null,
  "keys": [
-  "vless://91e8215c-cc6a-4494-b52b-efd87836ef50@real.embrofree.org:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=cdn.jsdelivr.net&fp=firefox&pbk=Xbd0JeKM6WsUITbELeeCEmQLl-4Sw_A-JQuzDBEco2M&type=tcp#EmbroKVN-VLESS-Free",
-  "hysteria2://91e8215c-cc6a-4494-b52b-efd87836ef50@media.embrofree.org:443/?sni=media.embrofree.org&alpn=h3#EmbroKVN-HY2-Free"
+  "vless://71e095f8-29e8-4ac3-ad6c-cc888b08d540@ger.embroimba.org:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=preview.redd.it&fp=firefox&pbk=Xbd0JeKM6WsUITbELeeCEmQLl-4Sw_A-JQuzDBEco2M#%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20go.kvn-wiki.com"
  ],
- "updated": "2026-11-03T10:11:25+00:00",
- "checked": "2026-11-03T10:11:25+00:00"
+ "updated": "2026-11-04T20:48:32+00:00",
+ "checked": "2026-11-04T20:48:32+00:00"
 }
